@@ -78,6 +78,7 @@ nav ul li .nav-link:hover{
       border: 1px solid #F4F6FC33;
       margin-left: 48px;
       transition: .4s;
+      display: inline-block;
 }
 
 .nav-btn a:hover{
@@ -353,47 +354,51 @@ text-align: center;
 margin: 0 auto;
 padding-bottom: 47px;
 }
-.product-part .product-box{
+.product-part .product-cards{
     display: flex;
-    gap: 20px;
     flex-wrap: wrap;
 }
 
-.product-part .product-box .product-card{
-    width: 32%;
-    height: 280px;
-    background: #fff;
-    border-radius: 15px;
-}
-.product-part .product-box .product-card i{
-    width: 40px;
-    height: 35px;
-  color: #2405F2;
-  margin-top: 58px;
-  margin-left: 48px;
+.product-part .product-cards .product-card{
+width: 98%;
+background: #fff;
 }
 
-.product-part .product-box .product-card h2{
+.product-content{
+    padding-top: 48px;
+    padding-left: 48px;
+}
+.p-img-box{
+    width: 35px;
+    height: 35px;
+}
+.p-img-box img{
+    width: 100%;
+    height: 100%;
+}
+.title-3 h3{
     font-size: 24px;
     font-weight: 500;
-font-family: "Poppins", sans-serif;
-color: #282938;
-  margin-left: 48px;
-}
-.product-part .product-box .product-card p{
-    font-size: 16px;
-    font-weight: 400;
     font-family: "Poppins", sans-serif;
-    color: #28293891;
-    width: 324.08px;
-    margin-top: 12px;
-      margin-left: 48px;
+    line-height: 36px;
+    padding-top: 22px;
 }
 
-.boxing{
-    margin-top: 24px;
-    margin-bottom: 128px;
+.title-3 p{
+     font-size: 16px;
+    font-weight: 400;
+    font-family: "Poppins", sans-serif;
+    line-height: 28px;
+    color: #282938d2;
+    width: 324px;
+    padding-top: 12px;
+    padding-bottom: 48px;
 }
+.x1{
+    margin-bottom: 24px;
+}
+
+
 /* ============================
 product-part-end
 =============================*/
@@ -439,7 +444,6 @@ client-part-start
     width: 75px;
     height: 75px;
     border-radius: 50%;
-    background: red;
 }
 .client-part .client-profile .client-image img{
     width: 100%;
@@ -448,22 +452,20 @@ client-part-start
 }
 
 
-.client-part .client-profile h1{
+.client-part .client-profile .cp-text h1{
    font-size: 18px;
    font-weight: 500;
     font-family: "Poppins", sans-serif;
     color: #282938;
     margin-left: 7px;
+    padding-bottom: 0px;
 }
-.client-part .client-profile P{
+.client-part .client-profile .cp-text p{
     font-size: 12px;
     font-weight: 500;
     font-family: "Poppins", sans-serif;
-    position: absolute;
-    bottom:0px;
-    right: 52%;
+  margin-left: 7px;
 }
-
 
 /* ============================
 client-part-end
@@ -610,10 +612,15 @@ margin-bottom: 34px;
     background: transparent;
     color: #fff;
 }
+.cv-1{
+    display: flex;
+    width: auto;
+    justify-content: center;
+}
+
 .s1{
     display:inline-block;
    margin-top: 33px;
-   padding-left: 190px;
 }
 
 /* ============================
@@ -681,6 +688,9 @@ footer-part-start
 =============================*/
 .footer-part{
     background: #1C1E53;
+}
+.footer-content{
+    display: flex;
 }
 
 .footer-part .f-img{
